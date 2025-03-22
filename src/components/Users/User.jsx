@@ -3,6 +3,8 @@ import { useNavigate } from "react-router";
 const User = ({ user }) => {
   const { name, phone, email, id } = user;
 
+  // Navigate route used
+
   const navigate = useNavigate();
 
   const handleShowDetails = () => {

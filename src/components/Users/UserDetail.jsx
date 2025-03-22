@@ -5,6 +5,8 @@ const UserDetail = () => {
 
   const { name } = userDetail;
 
+  // Navigate route used
+
   const navigate = useNavigate();
 
   const handleBackBtn = () => {
