@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <>
       <Header></Header>
-      <Outlet></Outlet>
+      <div className="container mx-auto py-3.5">
+        <Outlet></Outlet>
+      </div>
     </>
   );
 };
