@@ -1,19 +1,29 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Header = () => {
   return (
     <header className="bg-neutral-900/40 text-3xl font-semibold text-amber-100">
       <div className="container mx-auto flex items-center justify-between py-5">
         <div>
-          <Link to="/">Logo</Link>
+          <NavLink to="/">Logo</NavLink>
         </div>
         <nav className="flex gap-9">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/users">Users</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink className="active:bg-red-300" to="/">
+            Home
+          </NavLink>
+          <NavLink className="active:bg-red-300" to="/services">
+            Services
+          </NavLink>
+          <NavLink className="active:bg-red-300" to="/about">
+            About
+          </NavLink>
+          <NavLink className="active:bg-red-300" to="/users">
+            Users
+          </NavLink>
+          <NavLink className="active:bg-red-300" to="/contact">
+            Contact
+          </NavLink>
           <Link to="/login">Login</Link>
         </nav>
       </div>
