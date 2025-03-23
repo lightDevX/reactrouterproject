@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import UserDetail from "./components/Users/UserDetail";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
       {
         path: "/users",
