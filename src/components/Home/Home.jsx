@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Header></Header>
       <div className="container mx-auto py-3.5">
-        <Outlet></Outlet>
+        <Outlet />
       </div>
     </>
   );
